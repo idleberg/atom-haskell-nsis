@@ -1,6 +1,6 @@
 {
   "name": "haskell-nsis",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ASnippets for the Haskell NSIS package",
   "license": "MIT OR GPL-2.0",
   "author": {
