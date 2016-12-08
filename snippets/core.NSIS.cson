@@ -1,422 +1,398 @@
-# Generated with Atomizr – https://atom.io/packages/atomizr
-".source.haskell":
-	abort:
-		body: "abort${1: \"${2:String}\"}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "abort"
-	addPluginDir:
-		body: "addPluginDir \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "addPluginDir"
-	alert:
-		body: "alert \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "alert"
-	allowRootDirInstall:
-		body: "allowRootDirInstall ${1:Bool}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "allowRootDirInstall"
-	"allowRootDirInstall False":
-		body: "allowRootDirInstall False$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "allowRootDirInstall False"
-	"allowRootDirInstall True":
-		body: "allowRootDirInstall True$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "allowRootDirInstall True"
-	caption:
-		body: "caption \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "caption"
-	copyFiles:
-		body: "copyFiles [${1:Attrib}] \"${2:FilePath}\" \"${3:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "copyFiles"
-	createDirectory:
-		body: "createDirectory \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "createDirectory"
-	createShortcut:
-		body: "createShortcut \"${1:FilePath}\" [${2:Attrib}]$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "createShortcut"
-	delete:
-		body: "delete [${1:Attrib}] \"${2:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "delete"
-	deleteRegKey:
-		body: "deleteRegKey ${1:HKEY} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "deleteRegKey"
-	deleteRegValue:
-		body: "deleteRegValue ${1:HKEY} \"${2:String}\" \"${3:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "deleteRegValue"
-	detailPrint:
-		body: "detailPrint \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "detailPrint"
-	envVar:
-		body: "envVar ${1:String}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "envVar"
-	exec:
-		body: "exec \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "exec"
-	execShell:
-		body: "execShell [${1:ShowWindow}] \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "execShell"
-	execWait:
-		body: "execWait \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "execWait"
-	file:
-		body: "file [${1:Attrib}] \"${2:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "file"
-	fileClose:
-		body: "fileClose ${1:String}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "fileClose"
-	"fileOpen NeverShow":
-		body: "fileOpen ${1:FileMode} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "fileOpen NeverShow"
-	fileWrite:
-		body: "fileWrite ${1:FileHandle} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "fileWrite"
-	findEach:
-		body: '''
-			findEach "${1:FilePath}" \\$ \\\\${2:Var}
-				${4:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "findEach"
-	findWindow:
-		body: "findWindow \"${1:String}\" \"${2:String}\"${3: ${4:HWND}}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "findWindow"
-	getDlgItem:
-		body: "getDlgItem ${1:HWND} ${2:Int}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "getDlgItem"
-	getFileTime:
-		body: "getFileTime \"${1:FilePath}\"}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "getFileTime"
-	headerImage:
-		body: "headerImage \\$ Just \"${1:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "headerImage"
-	"headerImage Nothing":
-		body: "headerImage Nothing$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "headerImage Nothing"
-	iff:
-		body: "iff (${1:ExpBool}) (${2:ActionTrue}) (${3:ActionFalse})$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "iff"
-	iff_:
-		body: '''
-			iff_ (${1:ExpBool}) \\$ ${2:do}
-				${4:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "iff_"
-	"iff_ fileExists":
-		body: '''
-			iff_ (fileExists "${1:FilePath}") \\$ ${2:do}
-				${4:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "iff_ fileExists"
-	installDir:
-		body: "installDir \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "installDir"
-	installDirRegKey:
-		body: "installDirRegKey ${1:HKEY} \"${2:String}\" \"${3:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "installDirRegKey"
-	installIcon:
-		body: "installIcon \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "installIcon"
-	loop:
-		body: '''
-			loop \\$ \\\\${2:Label} -> ${3:do}
-				${4:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "loop"
-	messageBox:
-		body: "messageBox [${1:MessageBoxType}] \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "messageBox"
-	name:
-		body: "name \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "name"
-	onError:
-		body: "onError (${1:Action}) (${2:ActionError})$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "onError"
-	outFile:
-		body: "outFile \"${1:String}.exe\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "outFile"
-	page:
-		body: "page ${1:Page}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page"
-	"page Components":
-		body: "page Components$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page Components"
-	"page Confirm":
-		body: "page Confirm$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page Confirm"
-	"page Directory":
-		body: "page Directory$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page Directory"
-	"page Finish":
-		body: "page Finish ${1:FinishOptions}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page Finish"
-	"page InstFiles":
-		body: "page InstFiles$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page InstFiles"
-	"page License":
-		body: "page License \"${1:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "page License"
-	readRegStr:
-		body: "readRegStr ${1:HKEY} \"${2:String}\" \"${3:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "readRegStr"
-	requestExecutionLevel:
-		body: "requestExecutionLevel ${1:Level}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "requestExecutionLevel"
-	"requestExecutionLevel Admin":
-		body: "requestExecutionLevel Admin$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "requestExecutionLevel Admin"
-	"requestExecutionLevel Highest":
-		body: "requestExecutionLevel Highest$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "requestExecutionLevel Highest"
-	"requestExecutionLevel None":
-		body: "requestExecutionLevel None$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "requestExecutionLevel None"
-	"requestExecutionLevel User":
-		body: "requestExecutionLevel User$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "requestExecutionLevel User"
-	rmdir:
-		body: "rmdir [${1:Attrib}] \"${2:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "rmdir"
-	section:
-		body: '''
-			section "${1:String}" [${2:Attrib}] \\$ ${3:do}
-				${4:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "section"
-	sectionGet:
-		body: "sectionGet ${1:SectionId} ${2:SectionFlag}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sectionGet"
-	sectionGetText:
-		body: "sectionGetText ${1:SectionId} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sectionGetText"
-	sectionGroup:
-		body: '''
-			sectionGroup "${1:String}" [${2:Attrib}] \\$ ${3:do}
-				${4:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sectionGroup"
-	sectionSet:
-		body: "sectionSet ${1:SectionId} ${2:SectionFlag} ${3:Bool}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sectionSet"
-	sectionSetText:
-		body: "sectionSetText ${1:SectionId} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sectionSetText"
-	sendMessage:
-		body: "sendMessage [${1:Attrib}] ${2:HWND} ${3:Int} ${4:a} ${5:b}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sendMessage"
-	setCompressor:
-		body: "setCompressor ${1:Compressor}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setCompressor"
-	"setCompressor BZIP2":
-		body: "setCompressor BZIP2$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setCompressor BZIP2"
-	"setCompressor LZMA":
-		body: "setCompressor LZMA$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setCompressor LZMA"
-	"setCompressor ZLIB":
-		body: "setCompressor ZLIB$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setCompressor ZLIB"
-	setDetailsPrint:
-		body: "setDetailsPrint \"${2:DetailsPrint}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setDetailsPrint"
-	"setDetailsPrint Both":
-		body: "setDetailsPrint Both$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setDetailsPrint Both"
-	"setDetailsPrint LastUsed":
-		body: "setDetailsPrint LastUsed$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setDetailsPrint LastUsed"
-	"setDetailsPrint ListOnly":
-		body: "setDetailsPrint ListOnly$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setDetailsPrint ListOnly"
-	"setDetailsPrint NoDetailsPrint":
-		body: "setDetailsPrint NoDetailsPrint$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setDetailsPrint NoDetailsPrint"
-	"setDetailsPrint TextOnly":
-		body: "setDetailsPrint TextOnly$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setDetailsPrint TextOnly"
-	setOutPath:
-		body: "setOutPath \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "setOutPath"
-	showInstDetails:
-		body: "showInstDetails ${1:Visibility}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showInstDetails"
-	"showInstDetails Hide":
-		body: "showInstDetails Hide$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showInstDetails Hide"
-	"showInstDetails NeverShow":
-		body: "showInstDetails NeverShow$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showInstDetails NeverShow"
-	"showInstDetails Show":
-		body: "showInstDetails Show$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showInstDetails Show"
-	showUninstDetails:
-		body: "showUninstDetails ${1:Visibility}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showUninstDetails"
-	"showUninstDetails Hide":
-		body: "showUninstDetails Hide$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showUninstDetails Hide"
-	"showUninstDetails NeverShow":
-		body: "showUninstDetails NeverShow$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showUninstDetails NeverShow"
-	"showUninstDetails Show":
-		body: "showUninstDetails Show$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "showUninstDetails Show"
-	sleep:
-		body: "sleep ${1:Int}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "sleep"
-	strDrop:
-		body: "strDrop ${1:Int} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "strDrop"
-	strLength:
-		body: "strLength \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "strLength"
-	strRead:
-		body: "strRead \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "strRead"
-	strShow:
-		body: "strShow ${1:Int}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "strShow"
-	strTake:
-		body: "strTake ${1:Int} \"${2:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "strTake"
-	uninstall:
-		body: '''
-			uninstall \\$ ${1:do}
-				${2:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "uninstall"
-	uninstallIcon:
-		body: "uninstallIcon \"${1:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "uninstallIcon"
-	unpage:
-		body: "unpage ${1:Page}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage"
-	"unpage Components":
-		body: "unpage Components$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage Components"
-	"unpage Confirm":
-		body: "unpage Confirm$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage Confirm"
-	"unpage Directory":
-		body: "unpage Directory$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage Directory"
-	"unpage Finish":
-		body: "unpage Finish ${1:FinishOptions}$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage Finish"
-	"unpage InstFiles":
-		body: "unpage InstFiles$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage InstFiles"
-	"unpage License":
-		body: "unpage License \"${1:FilePath}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "unpage License"
-	while:
-		body: '''
-			while (${1:ExpBool}) \\$ ${2:do}
-				${3:-- your code here}$0
-		'''
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "while"
-	writeRegDWORD:
-		body: "writeRegDWORD ${1:HKEY} \"${2:String}\" \"${3:String}\" \"${4:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "writeRegDWORD"
-	writeRegExpandStr:
-		body: "writeRegExpandStr ${1:HKEY} \"${2:String}\" \"${3:String}\" \"${4:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "writeRegExpandStr"
-	writeRegStr:
-		body: "writeRegStr ${1:HKEY} \"${2:String}\" \"${3:String}\" \"${4:String}\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "writeRegStr"
-	writeUninstaller:
-		body: "writeUninstaller \"${1:String}.exe\"$0"
-		leftLabelHTML: "<span class='keyword'>K</span>"
-		prefix: "writeUninstaller"
+# Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
+'.source.haskell':
+  'allowRootDirInstall False':
+    body: 'allowRootDirInstall False$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'allowRootDirInstall False'
+  'allowRootDirInstall True':
+    body: 'allowRootDirInstall True$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'allowRootDirInstall True'
+  'fileOpen NeverShow':
+    body: 'fileOpen ${1:FileMode} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'fileOpen NeverShow'
+  'headerImage Nothing':
+    body: 'headerImage Nothing$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'headerImage Nothing'
+  'iff_ fileExists':
+    body: 'iff_ (fileExists \"${1:FilePath}\") \\$ ${2:do}\n\t${4:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'iff_ fileExists'
+  'page Components':
+    body: 'page Components$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page Components'
+  'page Confirm':
+    body: 'page Confirm$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page Confirm'
+  'page Directory':
+    body: 'page Directory$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page Directory'
+  'page Finish':
+    body: 'page Finish ${1:FinishOptions}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page Finish'
+  'page InstFiles':
+    body: 'page InstFiles$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page InstFiles'
+  'page License':
+    body: 'page License \"${1:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page License'
+  'requestExecutionLevel Admin':
+    body: 'requestExecutionLevel Admin$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'requestExecutionLevel Admin'
+  'requestExecutionLevel Highest':
+    body: 'requestExecutionLevel Highest$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'requestExecutionLevel Highest'
+  'requestExecutionLevel None':
+    body: 'requestExecutionLevel None$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'requestExecutionLevel None'
+  'requestExecutionLevel User':
+    body: 'requestExecutionLevel User$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'requestExecutionLevel User'
+  'setCompressor BZIP2':
+    body: 'setCompressor BZIP2$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setCompressor BZIP2'
+  'setCompressor LZMA':
+    body: 'setCompressor LZMA$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setCompressor LZMA'
+  'setCompressor ZLIB':
+    body: 'setCompressor ZLIB$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setCompressor ZLIB'
+  'setDetailsPrint Both':
+    body: 'setDetailsPrint Both$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setDetailsPrint Both'
+  'setDetailsPrint LastUsed':
+    body: 'setDetailsPrint LastUsed$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setDetailsPrint LastUsed'
+  'setDetailsPrint ListOnly':
+    body: 'setDetailsPrint ListOnly$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setDetailsPrint ListOnly'
+  'setDetailsPrint NoDetailsPrint':
+    body: 'setDetailsPrint NoDetailsPrint$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setDetailsPrint NoDetailsPrint'
+  'setDetailsPrint TextOnly':
+    body: 'setDetailsPrint TextOnly$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setDetailsPrint TextOnly'
+  'showInstDetails Hide':
+    body: 'showInstDetails Hide$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showInstDetails Hide'
+  'showInstDetails NeverShow':
+    body: 'showInstDetails NeverShow$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showInstDetails NeverShow'
+  'showInstDetails Show':
+    body: 'showInstDetails Show$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showInstDetails Show'
+  'showUninstDetails Hide':
+    body: 'showUninstDetails Hide$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showUninstDetails Hide'
+  'showUninstDetails NeverShow':
+    body: 'showUninstDetails NeverShow$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showUninstDetails NeverShow'
+  'showUninstDetails Show':
+    body: 'showUninstDetails Show$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showUninstDetails Show'
+  'unpage Components':
+    body: 'unpage Components$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage Components'
+  'unpage Confirm':
+    body: 'unpage Confirm$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage Confirm'
+  'unpage Directory':
+    body: 'unpage Directory$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage Directory'
+  'unpage Finish':
+    body: 'unpage Finish ${1:FinishOptions}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage Finish'
+  'unpage InstFiles':
+    body: 'unpage InstFiles$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage InstFiles'
+  'unpage License':
+    body: 'unpage License \"${1:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage License'
+  abort:
+    body: 'abort${1: \"${2:String}\"}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'abort'
+  addPluginDir:
+    body: 'addPluginDir \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'addPluginDir'
+  alert:
+    body: 'alert \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'alert'
+  allowRootDirInstall:
+    body: 'allowRootDirInstall ${1:Bool}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'allowRootDirInstall'
+  caption:
+    body: 'caption \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'caption'
+  copyFiles:
+    body: 'copyFiles [${1:Attrib}] \"${2:FilePath}\" \"${3:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'copyFiles'
+  createDirectory:
+    body: 'createDirectory \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'createDirectory'
+  createShortcut:
+    body: 'createShortcut \"${1:FilePath}\" [${2:Attrib}]$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'createShortcut'
+  delete:
+    body: 'delete [${1:Attrib}] \"${2:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'delete'
+  deleteRegKey:
+    body: 'deleteRegKey ${1:HKEY} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'deleteRegKey'
+  deleteRegValue:
+    body: 'deleteRegValue ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'deleteRegValue'
+  detailPrint:
+    body: 'detailPrint \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'detailPrint'
+  envVar:
+    body: 'envVar ${1:String}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'envVar'
+  exec:
+    body: 'exec \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'exec'
+  execShell:
+    body: 'execShell [${1:ShowWindow}] \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'execShell'
+  execWait:
+    body: 'execWait \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'execWait'
+  file:
+    body: 'file [${1:Attrib}] \"${2:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'file'
+  fileClose:
+    body: 'fileClose ${1:String}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'fileClose'
+  fileWrite:
+    body: 'fileWrite ${1:FileHandle} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'fileWrite'
+  findEach:
+    body: 'findEach \"${1:FilePath}\" \\$ \\\\${2:Var}\n\t${4:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'findEach'
+  findWindow:
+    body: 'findWindow \"${1:String}\" \"${2:String}\"${3: ${4:HWND}}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'findWindow'
+  getDlgItem:
+    body: 'getDlgItem ${1:HWND} ${2:Int}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'getDlgItem'
+  getFileTime:
+    body: 'getFileTime \"${1:FilePath}\"}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'getFileTime'
+  headerImage:
+    body: 'headerImage \\$ Just \"${1:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'headerImage'
+  iff:
+    body: 'iff (${1:ExpBool}) (${2:ActionTrue}) (${3:ActionFalse})$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'iff'
+  iff_:
+    body: 'iff_ (${1:ExpBool}) \\$ ${2:do}\n\t${4:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'iff_'
+  installDir:
+    body: 'installDir \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'installDir'
+  installDirRegKey:
+    body: 'installDirRegKey ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'installDirRegKey'
+  installIcon:
+    body: 'installIcon \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'installIcon'
+  loop:
+    body: 'loop \\$ \\\\${2:Label} -> ${3:do}\n\t${4:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'loop'
+  messageBox:
+    body: 'messageBox [${1:MessageBoxType}] \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'messageBox'
+  name:
+    body: 'name \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'name'
+  onError:
+    body: 'onError (${1:Action}) (${2:ActionError})$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'onError'
+  outFile:
+    body: 'outFile \"${1:String}.exe\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'outFile'
+  page:
+    body: 'page ${1:Page}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'page'
+  readRegStr:
+    body: 'readRegStr ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'readRegStr'
+  requestExecutionLevel:
+    body: 'requestExecutionLevel ${1:Level}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'requestExecutionLevel'
+  rmdir:
+    body: 'rmdir [${1:Attrib}] \"${2:FilePath}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'rmdir'
+  section:
+    body: 'section \"${1:String}\" [${2:Attrib}] \\$ ${3:do}\n\t${4:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'section'
+  sectionGet:
+    body: 'sectionGet ${1:SectionId} ${2:SectionFlag}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sectionGet'
+  sectionGetText:
+    body: 'sectionGetText ${1:SectionId} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sectionGetText'
+  sectionGroup:
+    body: 'sectionGroup \"${1:String}\" [${2:Attrib}] \\$ ${3:do}\n\t${4:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sectionGroup'
+  sectionSet:
+    body: 'sectionSet ${1:SectionId} ${2:SectionFlag} ${3:Bool}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sectionSet'
+  sectionSetText:
+    body: 'sectionSetText ${1:SectionId} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sectionSetText'
+  sendMessage:
+    body: 'sendMessage [${1:Attrib}] ${2:HWND} ${3:Int} ${4:a} ${5:b}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sendMessage'
+  setCompressor:
+    body: 'setCompressor ${1:Compressor}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setCompressor'
+  setDetailsPrint:
+    body: 'setDetailsPrint \"${2:DetailsPrint}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setDetailsPrint'
+  setOutPath:
+    body: 'setOutPath \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'setOutPath'
+  showInstDetails:
+    body: 'showInstDetails ${1:Visibility}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showInstDetails'
+  showUninstDetails:
+    body: 'showUninstDetails ${1:Visibility}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'showUninstDetails'
+  sleep:
+    body: 'sleep ${1:Int}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'sleep'
+  strDrop:
+    body: 'strDrop ${1:Int} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'strDrop'
+  strLength:
+    body: 'strLength \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'strLength'
+  strRead:
+    body: 'strRead \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'strRead'
+  strShow:
+    body: 'strShow ${1:Int}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'strShow'
+  strTake:
+    body: 'strTake ${1:Int} \"${2:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'strTake'
+  uninstall:
+    body: 'uninstall \\$ ${1:do}\n\t${2:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'uninstall'
+  uninstallIcon:
+    body: 'uninstallIcon \"${1:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'uninstallIcon'
+  unpage:
+    body: 'unpage ${1:Page}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unpage'
+  while:
+    body: 'while (${1:ExpBool}) \\$ ${2:do}\n\t${3:-- your code here}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'while'
+  writeRegDWORD:
+    body: 'writeRegDWORD ${1:HKEY} \"${2:String}\" \"${3:String}\" \"${4:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'writeRegDWORD'
+  writeRegExpandStr:
+    body: 'writeRegExpandStr ${1:HKEY} \"${2:String}\" \"${3:String}\" \"${4:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'writeRegExpandStr'
+  writeRegStr:
+    body: 'writeRegStr ${1:HKEY} \"${2:String}\" \"${3:String}\" \"${4:String}\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'writeRegStr'
+  writeUninstaller:
+    body: 'writeUninstaller \"${1:String}.exe\"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'writeUninstaller'
