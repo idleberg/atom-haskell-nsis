@@ -1,0 +1,22 @@
+# Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
+'.source.haskell':
+  Base64:
+    body: 'import Development.NSIS.Plugins.Base64$0'
+    leftLabelHTML: '<span class=\'keyword\'>import</span>'
+    prefix: 'Base64'
+  EnvVarUpdate:
+    body: 'import Development.NSIS.Plugins.EnvVarUpdate$0'
+    leftLabelHTML: '<span class=\'keyword\'>import</span>'
+    prefix: 'EnvVarUpdate'
+  Sections:
+    body: 'import Development.NSIS.Plugins.Sections$0'
+    leftLabelHTML: '<span class=\'keyword\'>import</span>'
+    prefix: 'Sections'
+  TBProgress:
+    body: 'import Development.NSIS.Plugins.Taskbar$0'
+    leftLabelHTML: '<span class=\'keyword\'>import</span>'
+    prefix: 'Taskbar'
+  WinMessages:
+    body: 'import Development.NSIS.Plugins.WinMessages$0'
+    leftLabelHTML: '<span class=\'keyword\'>import</span>'
+    prefix: 'WinMessages'

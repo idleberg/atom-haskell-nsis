@@ -1,0 +1,6 @@
+# Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
+'.source.haskell':
+  taskbar:
+    body: 'taskbar [${1:Action}]$0'
+    leftLabelHTML: '<span class=\'support function\'>Taskbar</span>'
+    prefix: 'taskbar'

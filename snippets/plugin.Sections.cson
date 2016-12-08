@@ -1,0 +1,10 @@
+# Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
+'.source.haskell':
+  decrypt:
+    body: 'decrypt [${1:String}]$0'
+    leftLabelHTML: '<span class=\'support function\'>Sections</span>'
+    prefix: 'decrypt'
+  encrypt:
+    body: 'encrypt [${1:String}]$0'
+    leftLabelHTML: '<span class=\'support function\'>Sections</span>'
+    prefix: 'encrypt'
