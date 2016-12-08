@@ -39,6 +39,7 @@ Inside the cloned directory, install Node dependencies:
 
 ```bash
 $ yarn || npm install
+```
 
 ## License
 
