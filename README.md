@@ -1,4 +1,4 @@
-# NSIS for Atom
+# haskell-nsis
 
 [![apm](https://img.shields.io/apm/l/haskell-nsis.svg?style=flat-square)](https://atom.io/packages/haskell-nsis)
 [![apm](https://img.shields.io/apm/v/haskell-nsis.svg?style=flat-square)](https://atom.io/packages/haskell-nsis)
