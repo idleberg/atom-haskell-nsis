@@ -44,6 +44,10 @@
     body: 'page License \"${1:FilePath}\"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
     prefix: 'page License'
+  'plugin':
+    body: 'plugin \"${1:String}\" \"${2:String}\" [${3:Exp}]$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'plugin'
   'requestExecutionLevel Admin':
     body: 'requestExecutionLevel Admin$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
