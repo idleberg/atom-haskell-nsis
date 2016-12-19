@@ -5,7 +5,7 @@
       \tname "${2:installer_name}"
       \toutFile "${3:${2:installer_name}}.exe"
       \trequestExecutionLevel ${4:Admin}
-      \tinstallDir "$PROGRAMFILES/${5:${2:installer_name}}"
+      \tinstallDir "\\$PROGRAMFILES/${5:${2:installer_name}}"
 
       \tpage Components
       \tpage Directory
