@@ -388,6 +388,18 @@
     body: 'strTake ${1:Int} \"${2:String}\"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
     prefix: 'strTake'
+  unicode:
+    body: 'unicode ${1:Bool}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unicode'
+  'unicode False':
+    body: 'unicode False$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unicode False'
+  'unicode True':
+    body: 'unicode True$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'unicode True'
   uninstall:
     body: 'uninstall \\$ ${1:do}\n\t${2:-- your code here}$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
