@@ -1,10 +1,10 @@
 # haskell-nsis
 
-[![apm](https://img.shields.io/apm/l/haskell-nsis.svg?style=flat-square)](https://atom.io/packages/haskell-nsis)
-[![apm](https://img.shields.io/apm/v/haskell-nsis.svg?style=flat-square)](https://atom.io/packages/haskell-nsis)
-[![apm](https://img.shields.io/apm/dm/haskell-nsis.svg?style=flat-square)](https://atom.io/packages/haskell-nsis)
-[![Travis](https://img.shields.io/travis/idleberg/atom-haskell-nsis.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-haskell-nsis)
-[![David](https://img.shields.io/david/dev/idleberg/atom-haskell-nsis.svg?style=flat-square)](https://david-dm.org/idleberg/atom-haskell-nsis?type=dev)
+[![apm](https://flat.badgen.net/apm/license/haskell-nsis)](https://atom.io/packages/haskell-nsis)
+[![apm](https://flat.badgen.net/apm/v/haskell-nsis)](https://atom.io/packages/haskell-nsis)
+[![apm](https://flat.badgen.net/apm/dl/haskell-nsis)](https://atom.io/packages/haskell-nsis)
+[![CI](https://img.shields.io/github/workflow/status/idleberg/atom-haskell-nsis/CI?style=flat-square)](https://github.com/idleberg/atom-haskell-nsis/actions)
+[![David](https://flat.badgen.net/david/dev/idleberg/atom-haskell-nsis)](https://david-dm.org/idleberg/atom-haskell-nsis?type=dev)
 
 Snippets for the Haskell [NSIS package](https://hackage.haskell.org/package/nsis). Work in progress!
 

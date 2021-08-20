@@ -1,26 +1,26 @@
 # Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
 '.source.haskell':
   deleteEnvVar:
-    body: 'deleteEnvVar ${1:HKEY} \"${2:String}\"$0'
+    body: 'deleteEnvVar ${1:HKEY} "${2:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>EnvVarUpdate</span>'
     prefix: 'deleteEnvVar'
   getEnvVar:
-    body: 'getEnvVar ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    body: 'getEnvVar ${1:HKEY} "${2:String}" "${3:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>EnvVarUpdate</span>'
     prefix: 'getEnvVar'
   setEnvVar:
-    body: 'setEnvVar ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    body: 'setEnvVar ${1:HKEY} "${2:String}" "${3:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>EnvVarUpdate</span>'
     prefix: 'setEnvVar'
   setEnvVarAppend:
-    body: 'setEnvVarAppend ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    body: 'setEnvVarAppend ${1:HKEY} "${2:String}" "${3:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>EnvVarUpdate</span>'
     prefix: 'setEnvVarAppend'
   setEnvVarPrepend:
-    body: 'setEnvVarPrepend ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    body: 'setEnvVarPrepend ${1:HKEY} "${2:String}" "${3:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>EnvVarUpdate</span>'
     prefix: 'setEnvVarPrepend'
   setEnvVarRemove:
-    body: 'setEnvVarRemove ${1:HKEY} \"${2:String}\" \"${3:String}\"$0'
+    body: 'setEnvVarRemove ${1:HKEY} "${2:String}" "${3:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>EnvVarUpdate</span>'
     prefix: 'setEnvVarRemove'

@@ -1,19 +1,19 @@
 # Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
 '.source.haskell':
   strCheck:
-    body: 'strCheck \"${1:String}\" \"${2:String}\"$0'
+    body: 'strCheck "${1:String}" "${2:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>Library</span>'
     prefix: 'strCheck'
   strIsPrefixOf:
-    body: 'strIsPrefixOf \"${1:String}\" \"${2:String}\"$0'
+    body: 'strIsPrefixOf "${1:String}" "${2:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>Library</span>'
     prefix: 'strIsPrefixOf'
   strIsSuffixOf:
-    body: 'strIsSuffixOf \"${1:String}\" \"${2:String}\"$0'
+    body: 'strIsSuffixOf "${1:String}" "${2:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>Library</span>'
     prefix: 'strIsSuffixOf'
   strReplace:
-    body: 'strReplace \"${1:String}\" \"${2:String}\" \"${3:String}\"$0'
+    body: 'strReplace "${1:String}" "${2:String}" "${3:String}"$0'
     leftLabelHTML: '<span class=\'support function\'>Library</span>'
     prefix: 'strReplace'
   strUnlines:
@@ -21,6 +21,6 @@
     leftLabelHTML: '<span class=\'support function\'>Library</span>'
     prefix: 'strUnlines'
   writeFileLines:
-    body: 'writeFileLines \"${1:FilePath}\"\" [${2:String}]$0'
+    body: 'writeFileLines "${1:FilePath}"" [${2:String}]$0'
     leftLabelHTML: '<span class=\'support function\'>Library</span>'
     prefix: 'writeFileLines'

@@ -1,10 +1,10 @@
 # Generated with Atomizr - https://github.com/idleberg/sublime-atomizr
 '.source.haskell':
   decrypt:
-    body: 'decrypt ${2:\"${1:String}\"}$0'
+    body: 'decrypt ${2:"${1:String}"}$0'
     leftLabelHTML: '<span class=\'support function\'>Base64</span>'
     prefix: 'decrypt'
   encrypt:
-    body: 'encrypt ${2:\"${1:String}\"}$0'
+    body: 'encrypt ${2:"${1:String}"}$0'
     leftLabelHTML: '<span class=\'support function\'>Base64</span>'
     prefix: 'encrypt'
