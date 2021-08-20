@@ -5,7 +5,6 @@
 [![apm](https://img.shields.io/apm/dm/haskell-nsis.svg?style=flat-square)](https://atom.io/packages/haskell-nsis)
 [![Travis](https://img.shields.io/travis/idleberg/atom-haskell-nsis.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-haskell-nsis)
 [![David](https://img.shields.io/david/dev/idleberg/atom-haskell-nsis.svg?style=flat-square)](https://david-dm.org/idleberg/atom-haskell-nsis?type=dev)
-[![Gitter](https://img.shields.io/badge/chat-Gitter-ed1965.svg?style=flat-square)](https://gitter.im/NSIS-Dev/Atom)
 
 Snippets for the Haskell [NSIS package](https://hackage.haskell.org/package/nsis). Work in progress!
 
