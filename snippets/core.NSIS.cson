@@ -208,6 +208,10 @@
     body: 'execShell [${1:ShowWindow}] "${2:String}"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
     prefix: 'execShell'
+  execShellWait:
+    body: 'execShellWait [${1:ShowWindow}] "${2:String}"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'execShellWait'
   execWait:
     body: 'execWait "${1:String}"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
@@ -388,6 +392,22 @@
     body: 'strTake ${1:Int} "${2:String}"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
     prefix: 'strTake'
+  target:
+    body: 'target ${1:Architecture}$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'target'
+  'target AMD64Unicode':
+    body: 'target AMD64Unicode$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'target AMD64Unicode'
+  'target X86ANSI':
+    body: 'target X86ANSI$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'target X86ANSI'
+  'target X86Unicode':
+    body: 'target X86Unicode$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'target X86Unicode'
   unicode:
     body: 'unicode ${1:Bool}$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
