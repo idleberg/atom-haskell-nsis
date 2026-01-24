@@ -444,6 +444,10 @@
     body: 'writeRegExpandStr ${1:HKEY} "${2:String}" "${3:String}" "${4:String}"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
     prefix: 'writeRegExpandStr'
+  writeRegMultiStr:
+    body: 'writeRegMultiStr ${1:HKEY} "${2:String}" "${3:String}" "${4:String}"$0'
+    leftLabelHTML: '<span class=\'keyword\'>K</span>'
+    prefix: 'writeRegMultiStr'
   writeRegStr:
     body: 'writeRegStr ${1:HKEY} "${2:String}" "${3:String}" "${4:String}"$0'
     leftLabelHTML: '<span class=\'keyword\'>K</span>'
